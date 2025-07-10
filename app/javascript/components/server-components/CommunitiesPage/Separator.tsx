@@ -33,8 +33,8 @@ export const Separator = ({
     ) : null}
     <span
       className={cx("flex-shrink rounded-full border px-3 py-1.5 text-xs font-bold", {
-        "border-gray-200 bg-black text-white dark:border-gray-600 dark:bg-pink dark:text-black": type === "unread",
-        "border-gray-200 bg-white text-black dark:border-[rgb(var(--parent-color)/var(--border-alpha))] dark:bg-black dark:text-[var(--primary)]":
+        "border-gray-300 bg-gray-600 text-white dark:border-gray-600 dark:bg-pink dark:text-black": type === "unread",
+        "border-gray-200 bg-white text-black dark:border-[rgb(var(--parent-color)/var(--border-alpha))] dark:bg-gray-600 dark:text-[var(--primary)]":
           type === "date",
       })}
     >

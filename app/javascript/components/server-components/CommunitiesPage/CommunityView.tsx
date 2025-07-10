@@ -676,7 +676,7 @@ export const CommunityView = () => {
               />
             </div>
 
-            <div className="flex flex-1 flex-col overflow-hidden bg-white dark:bg-black" aria-label="Chat window">
+            <div className="flex flex-1 flex-col overflow-hidden bg-white dark:bg-gray-900" aria-label="Chat window">
               <CommunityChatHeader
                 community={selectedCommunity}
                 setSidebarOpen={setSidebarOpen}

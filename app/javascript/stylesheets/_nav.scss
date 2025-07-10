@@ -11,12 +11,12 @@ nav {
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
-    gap: spacer(3);
-    @include font-size(3);
-    padding: $body-padding-mobile;
+    gap: spacer(2);
+    @include font-size(2);
+    padding: calc($body-padding-mobile * 0.75);
 
     h1 {
-      @include font-size(2);
+      @include font-size(1);
       width: 100%;
       text-align: center;
       @include text-singleline;
@@ -28,7 +28,7 @@ nav {
   }
 
   .logo-full {
-    @include font-size(5);
+    @include font-size(4);
     width: 100%;
   }
 
@@ -38,7 +38,7 @@ nav {
 
   header {
     display: none;
-    padding: spacer(3) spacer(4);
+    padding: spacer(2) spacer(3);
   }
 
   section,
@@ -48,7 +48,7 @@ nav {
     > a,
     details > summary {
       @include text-singleline;
-      padding: spacer(3) spacer(4);
+      padding: spacer(2) spacer(3);
       border-top: $border-width solid gray(3);
       border-bottom: $border-width solid transparent;
       .icon {

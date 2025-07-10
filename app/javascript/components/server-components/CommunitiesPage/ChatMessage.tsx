@@ -161,7 +161,7 @@ export const ChatMessage = ({
 
         {canShowActions ? (
           <div
-            className="absolute -top-6 right-0 z-10 flex gap-1 rounded-md border border-gray-300 dark:border-gray-600 bg-white p-1 hover:shadow-[4px_4px_#6b7280] dark:bg-black dark:hover:shadow-[4px_4px_#9ca3af]"
+            className="absolute -top-6 right-0 z-10 flex gap-1 rounded-md border border-gray-300 dark:border-gray-600 bg-white p-1 hover:shadow-[4px_4px_#6b7280] dark:bg-gray-900 dark:hover:shadow-[4px_4px_#9ca3af]"
             aria-label="Actions"
           >
             {isOwnMessage ? (
@@ -310,7 +310,7 @@ const MessageEditor = ({ content: initialContent, isSaving, onCancel, onSave }: 
         onScroll={determineIfMoreTextIndicatorShouldBeShown}
       />
       <div
-        className={cx("absolute bottom-0 left-0 right-0 flex justify-end gap-2 bg-white p-2 dark:bg-black", {
+        className={cx("absolute bottom-0 left-0 right-0 flex justify-end gap-2 bg-white p-2 dark:bg-gray-900", {
           "border-t border-gray-300 dark:border-gray-600": showMoreTextIndicator,
         })}
         onClick={(e) => {
